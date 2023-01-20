@@ -1,5 +1,5 @@
-import * as THREE from 'three';
-import './style.css';
+// import * as THREE from 'three';
+import 'style.css';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import gsap from "gsap";
 // @ts-ignore
@@ -18,7 +18,7 @@ const material = new THREE.MeshStandardMaterial({
     });
 
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('./assets/DROIDS/droids.gltf', (gltf) => {
+gltfLoader.load('assets/DROIDS/droids.gltf', (gltf) => {
     const root = gltf.scene;
     var newMaterial = new THREE.MeshStandardMaterial
     root.position.z = 19;
